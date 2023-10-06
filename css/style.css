@@ -8,13 +8,23 @@ body {
   width: 100vw;
   min-height: 100vh;
   background: #555;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  width: 100%;
+  background: #04aa6d;
+}
+
+.nav-container{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #f1f1f1; */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -34,10 +44,10 @@ body {
   margin: 0;
 }
 
-li a:hover:not(.active),
+.nav-list a:hover:not(.active),
 .nav-bar a:hover {
-  background: #555;
-  color: #fff;
+  box-shadow: 0px 5px;
+  transition: 0.7s;
 }
 
 .nav-bar .active {
@@ -69,8 +79,8 @@ button {
     background: none;
     outline: none;
     border: none;
-    margin-right: 1rem;
-    left: 90%;
+    left: 85%;
+
   }
 
   .bar {
@@ -102,7 +112,7 @@ button {
   }
 
   .mobile-nav {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 100%;
     width: 100%;
@@ -126,7 +136,6 @@ button {
     padding: 12px 16px;
     background-color: white;
     color: #000;
-    border: 2px solid;
   }
 
   .mobile-nav a:hover {
